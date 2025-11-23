@@ -157,7 +157,7 @@ STATICFILES_DIRS = [BASE_DIR / 'static']  # If you have static files
 STATIC_ROOT = BASE_DIR / 'staticfiles'    # For production
 
 # Media files (Uploaded files - product images, user uploads)
-MEDIA_URL = '/media/'  # URL to access media files
+MEDIA_URL = 'https://api.kerithofficetechnologyltd.co.ke/media/'  # URL to access media files
 MEDIA_ROOT = BASE_DIR / 'media'  # Directory where media files are stored
 
 # Default primary key field type

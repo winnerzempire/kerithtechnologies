@@ -44,23 +44,11 @@ ALLOWED_HOSTS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://kerithofficetechnologyltd.co.ke",
-    "https://www.kerithofficetechnologyltd.co.ke",
-
-    # Allow API subdomain frontend requests
-    "https://api.kerithofficetechnologyltd.co.ke",
-
-    # Local development
-    "http://localhost:3000",
+    "http://localhost:3000",  # React development server
     "http://127.0.0.1:3000",
-]
-
-CSRF_TRUSTED_ORIGINS = [
+    "http://kerithofficetechnologyltd.co.ke",
     "https://kerithofficetechnologyltd.co.ke",
-    "https://www.kerithofficetechnologyltd.co.ke",
-    "https://api.kerithofficetechnologyltd.co.ke",
 ]
-
 
 
 # Application definition
@@ -83,7 +71,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',  # MUST BE FIRST
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -91,8 +78,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
-
 
 ROOT_URLCONF = 'kerithtechnologies.urls'
 

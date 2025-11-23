@@ -40,11 +40,14 @@ ALLOWED_HOSTS = [
     '13.62.236.136',
     'kerithofficetechnologyltd.co.ke',
     'www.kerithofficetechnologyltd.co.ke',
+    'api.kerithofficetechnologyltd.co.ke',
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React development server
     "http://127.0.0.1:3000",
+    "http://kerithofficetechnologyltd.co.ke",
+    "https://kerithofficetechnologyltd.co.ke",
 ]
 
 

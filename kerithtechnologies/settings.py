@@ -218,3 +218,12 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 
 DEFAULT_TO_EMAIL = "hynicekwamboka@gmail.com"
+
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+USE_X_FORWARDED_HOST = True
+
+# Force Django to generate https absolute URLs
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+

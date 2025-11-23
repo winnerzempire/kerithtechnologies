@@ -51,6 +51,13 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://kerithofficetechnologyltd.co.ke",
+    "https://www.kerithofficetechnologyltd.co.ke",
+    "https://api.kerithofficetechnologyltd.co.ke",  # Add this
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
